@@ -1,0 +1,8 @@
+.searchBar {
+    height: 70vh;
+}
+
+.searchForm {
+    display: inline;
+    border-radius: 20%;
+}
