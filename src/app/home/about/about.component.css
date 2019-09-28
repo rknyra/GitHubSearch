@@ -1,0 +1,13 @@
+.abtSection {
+    font-size: 2.3vh;
+    color: #333;
+    background: #fff;
+    text-align: center;
+}
+
+.aboutContent1,
+.aboutContent2,
+.aboutContent3 {
+    text-align: justify;
+    margin-left: 100px;
+}
