@@ -1,6 +1,11 @@
 .navCustomCss {
-    /* background-color: #faf5f5; */
     background: #f8fdfd;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.navbar-brand {
+    margin-left: 30px;
 }
 
 .gitHubLogo {
@@ -10,7 +15,7 @@
 }
 
 .navDiv {
-    margin-left: 67vw;
+    margin-left: 63vw;
 }
 
 .homeIcon,
