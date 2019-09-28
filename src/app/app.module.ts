@@ -6,18 +6,24 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './home/about/about.component';
 import { ExploreComponent } from './home/explore/explore.component';
+import { NavbarComponent } from './home/navbar/navbar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
-    ExploreComponent
+    ExploreComponent,
+    NavbarComponent
   ],
+
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })

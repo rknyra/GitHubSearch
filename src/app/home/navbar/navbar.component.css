@@ -1,0 +1,21 @@
+.navCustomCss {
+    background-color: #faf5f5;
+}
+
+.gitHubLogo {
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+}
+
+.navDiv {
+    margin-left: 67vw;
+}
+
+.homeIcon,
+.aboutIcon,
+.exploreIcon {
+    width: 40px;
+    height: 40px;
+    margin-right: 30px;
+}
