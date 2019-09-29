@@ -8,6 +8,8 @@ import { AboutComponent } from './home/about/about.component';
 import { ExploreComponent } from './home/explore/explore.component';
 import { NavbarComponent } from './home/navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './home/footer/footer.component';
+// import { HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,13 +17,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     AboutComponent,
     ExploreComponent,
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent
   ],
 
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    // HttpClient,
   ],
   
   providers: [],
