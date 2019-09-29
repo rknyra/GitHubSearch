@@ -9,6 +9,7 @@ import { GhSearchService } from '../gh-search-service';
 export class HomeComponent implements OnInit {
   rkGhProfile: any;
   rkGhRepos: any;
+  totalRepos: number;
   username = 'RkNyra';
   
 

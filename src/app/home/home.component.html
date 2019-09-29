@@ -16,7 +16,7 @@
                     <div>{{rkGhProfile.bio}}</div>
                     <div>{{rkGhProfile.location}}</div>
                     <div>
-                        <a href={{rkGhProfile.url}}>{{rkGhProfile.url}}</a></div>
+                        <a href={{rkGhProfile.html_url}} target="_blank">{{rkGhProfile.url}}</a></div>
                 </div>
             </div>
 
@@ -30,7 +30,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 repositories">
 
                 <div class="repoHeading">
-                    <h2>Repositories</h2>
+                    <h2>Repositories: {{rkGhProfile.public_repos}}</h2>
                 </div>
 
                 <div class="card" *ngFor='let repo of rkGhRepos'>
