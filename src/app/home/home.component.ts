@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { HttpClient } from '@angular/common/http';
-// import { HttpClient } from '@angular/common/http';
+import { GhSearchService } from '../gh-search-service';
 
 @Component({
   selector: 'app-home',
@@ -10,16 +9,34 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   rkGhProfile: any;
   rkGhRepos: any;
+  username: 'RkNyra';
   
 
-  // constructor(private http: HttpClient) {
-  //   http.get('https://api.github.com/users/RkNyra')
-  //   .subscribe(response =>{
-  //     this.rkGhProfile = response.json();
-  //   });
-  //  }
+  constructor(
+    private ghService: GhSearchService
+  )  {
+    this.getMyProfile();
+  }
 
   ngOnInit() {
+  }
+
+  getMyProfile(){
+    try {
+      this.ghService.getMyGithubData(this.username).then((res)=>{
+        console.log('RK Profile.----------------', res)
+        // this.rkGhProfile = JSON.parse(res.body)
+
+      }
+       
+      )
+     
+
+    }catch(error){
+      
+    }
+  
+
   }
 
 }

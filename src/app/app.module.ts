@@ -9,7 +9,8 @@ import { ExploreComponent } from './home/explore/explore.component';
 import { NavbarComponent } from './home/navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './home/footer/footer.component';
-// import { HttpClient } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FooterComponent } from './home/footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    // HttpClient,
+    HttpModule
+    
   ],
   
   providers: [],
