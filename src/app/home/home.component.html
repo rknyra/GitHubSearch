@@ -7,15 +7,16 @@
     <div class="container ghProfileDetails">
         <div class="row align-items-center homeContent">
             <div class="col-lg-3 col-md-3 col-sm-12">
-                <img src="https://avatars0.githubusercontent.com/u/40194139?s=460&v=4" alt="RK Nyra Profile Pic" class="rounded-circle profilePic">
+                <img src={{rkGhProfile.avatar_url}} alt="RK Nyra Profile Pic" class="rounded-circle profilePic">
             </div>
 
             <div class="col-lg-9 col-md-9 col-sm-12 rkDetails">
-                <h2>Rhoda Kimanga (RK Nyra)</h2>
+                <h2>{{rkGhProfile.name}}</h2>
                 <div class="rkDetailsBlack">
-                    <div>Software Engineer, Poet, Roller-Skater, Rollballer</div>
-                    <div>Nairobi</div>
-                    <div>https://github.com/RkNyra</div>
+                    <div>{{rkGhProfile.bio}}</div>
+                    <div>{{rkGhProfile.location}}</div>
+                    <div>
+                        <a href={{rkGhProfile.url}}></a>{{rkGhProfile.url}}</div>
                 </div>
             </div>
 

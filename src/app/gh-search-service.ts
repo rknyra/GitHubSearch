@@ -20,7 +20,7 @@ export class GhSearchService {
   getMyGithubData(username){
     console.log(username)
     let promise = new Promise((resolve, reject) => {
-      this.http.get('https://api.github.com/users/RkNyra').toPromise().then(response => {
+      this.http.get(environment.apiUrl + 'users/' + username + '?access_token=' + environment.accessToken).toPromise().then(response => {
         this.myBio = response.json()
         resolve(this.myBio)
       },

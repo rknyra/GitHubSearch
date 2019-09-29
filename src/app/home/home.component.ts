@@ -9,7 +9,7 @@ import { GhSearchService } from '../gh-search-service';
 export class HomeComponent implements OnInit {
   rkGhProfile: any;
   rkGhRepos: any;
-  username: 'RkNyra';
+  username = 'RkNyra';
   
 
   constructor(
@@ -23,15 +23,12 @@ export class HomeComponent implements OnInit {
 
   getMyProfile(){
     try {
-      this.ghService.getMyGithubData(this.username).then((res)=>{
-        console.log('RK Profile.----------------', res)
-        // this.rkGhProfile = JSON.parse(res.body)
-
+      this.ghService.getMyGithubData(this.username).then((response)=>{
+        console.log('RK Profile.----------------', response)
+        this.rkGhProfile = response;
       }
        
       )
-     
-
     }catch(error){
       
     }
