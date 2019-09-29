@@ -1,9 +1,47 @@
 .homeSection {
     overflow: hidden;
+    font-family: 'Comfortaa', cursive;
+    background-attachment: scroll;
 }
 
-.ghProfileRk {
-    display: flex;
-    margin-top: 10vh;
-    background: lightgrey;
+.homeHeader {
+    height: 27vh;
+    width: 100vw;
+    background: black;
+}
+
+.ghProfileDetails {
+    margin-top: -18vh;
+}
+
+.profilePic {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border-width: 1px;
+    border-color: black;
+    background-color: black;
+}
+
+.rkDetails {
+    height: 90px;
+    color: white;
+}
+
+.rkDetailsBlack {
+    color: #333;
+    list-style: none;
+}
+
+.repositories {
+    color: #333;
+    margin-top: 5vh;
+}
+
+.repoHeading {
+    margin-bottom: 3vh;
+}
+
+.card {
+    margin-bottom: 2vh;
 }
