@@ -16,7 +16,7 @@
                     <div>{{rkGhProfile.bio}}</div>
                     <div>{{rkGhProfile.location}}</div>
                     <div>
-                        <a href={{rkGhProfile.url}}></a>{{rkGhProfile.url}}</div>
+                        <a href={{rkGhProfile.url}}>{{rkGhProfile.url}}</a></div>
                 </div>
             </div>
 
@@ -33,19 +33,13 @@
                     <h2>Repositories</h2>
                 </div>
 
-                <div class="card">
+                <div class="card" *ngFor='let repo of rkGhRepos'>
                     <div class="card-body">
-                        <div class="card-text">repo name</div>
-                        <div class="card-text">repo description</div>
-                        <div class="card-text">repo language</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-text">repo name</div>
-                        <div class="card-text">repo description</div>
-                        <div class="card-text">repo language</div>
+                        <div class="card-text">
+                            <h4> <a href={{repo.html_url}} target="_blank">{{repo.name}}</a></h4>
+                        </div>
+                        <div class="card-text">{{repo.description}}</div>
+                        <div class="card-text language-color">{{repo.language}}</div>
                     </div>
                 </div>
 

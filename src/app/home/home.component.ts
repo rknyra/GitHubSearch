@@ -16,24 +16,26 @@ export class HomeComponent implements OnInit {
     private ghService: GhSearchService
   )  {
     this.getMyProfile();
+    this.getMyRepos();
   }
 
   ngOnInit() {
   }
 
   getMyProfile(){
-    try {
-      this.ghService.getMyGithubData(this.username).then((response)=>{
+    
+      this.ghService.getGithubUser(this.username).then((response)=>{
         console.log('RK Profile.----------------', response)
         this.rkGhProfile = response;
-      }
-       
-      )
-    }catch(error){
-      
+      })
     }
-  
 
-  }
+  getMyRepos() {
+    
+      this.ghService.getGithubRepos(this.username).then((response) => {
+        console.log('RK Repo.----------------', response)
+        this.rkGhRepos = response;
+      })
+    }
 
 }

@@ -9,7 +9,8 @@ import { Http } from '@angular/http';
 
 export class GhSearchService {
 
-  myBio: any;
+  userData: any;
+  repoData: any;
 
   private username: string;
   private repositories: string;
@@ -17,16 +18,32 @@ export class GhSearchService {
   constructor(private http:Http) { 
     
   }
-  getMyGithubData(username){
+  getGithubUser(username){
     console.log(username)
     let promise = new Promise((resolve, reject) => {
       this.http.get(environment.apiUrl + 'users/' + username + '?access_token=' + environment.accessToken).toPromise().then(response => {
-        this.myBio = response.json()
-        resolve(this.myBio)
+        this.userData = response.json()
+        resolve(this.userData)
       },
         error => {
           console.log(error)
            reject(error)
+        })
+    })
+    return promise
+  }
+
+
+  getGithubRepos(username) {
+    console.log(username)
+    let promise = new Promise((resolve, reject) => {
+      this.http.get(environment.apiUrl + 'users/' + username + '/repos?access_token=' + environment.accessToken).toPromise().then(response => {
+        this.repoData = response.json()
+        resolve(this.repoData)
+      },
+        error => {
+          console.log(error)
+          reject(error)
         })
     })
     return promise
