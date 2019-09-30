@@ -13,9 +13,8 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent},
   { path: 'search-users', component: SearchUsersComponent},
   { path:'search-repos', component: SearchReposComponent },
-  { path: '**', component: NotFoundComponent },
-
-  { path: '', redirectTo: "/goals", pathMatch: "full" },
+  { path: '', redirectTo: "/home", pathMatch: "full" },
+  { path: '**', component: NotFoundComponent }
 ];
 
 @NgModule({
