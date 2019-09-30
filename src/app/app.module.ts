@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
+// import { AppRoutingModule } from './custom-route/custom-route.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './home/about/about.component';
@@ -13,6 +14,7 @@ import { SearchReposComponent } from './home/search-repos/search-repos.component
 import { SearchUsersComponent } from './home/search-users/search-users.component';
 import { FormsModule } from '@angular/forms';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
