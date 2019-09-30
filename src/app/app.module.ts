@@ -12,6 +12,7 @@ import { HttpModule } from '@angular/http';
 import { SearchReposComponent } from './home/search-repos/search-repos.component';
 import { SearchUsersComponent } from './home/search-users/search-users.component';
 import { FormsModule } from '@angular/forms';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     FooterComponent,
     SearchReposComponent,
-    SearchUsersComponent
+    SearchUsersComponent,
+    NotFoundComponent
     
   ],
 
