@@ -7,6 +7,15 @@
     margin-bottom: 20vh;
 }
 
+.card {
+    margin-bottom: 3vh;
+    background-color: #F8FDFD;
+}
+
+.card :hover {
+    background-color: #E5FBED;
+}
+
 .aboutContent1,
 .aboutContent2,
 .aboutContent3 {
