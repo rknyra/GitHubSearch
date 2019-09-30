@@ -15,6 +15,7 @@ import { SearchUsersComponent } from './home/search-users/search-users.component
 import { FormsModule } from '@angular/forms';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { from } from 'rxjs';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { from } from 'rxjs';
     FooterComponent,
     SearchReposComponent,
     SearchUsersComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    HighlightDirective
     
   ],
 
