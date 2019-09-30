@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GhSearchService } from 'src/app/gh-search-service';
-import { Subject } from 'rxjs';
+
 
 @Component({
   selector: 'app-search-users',
