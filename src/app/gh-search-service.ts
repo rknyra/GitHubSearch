@@ -12,9 +12,6 @@ export class GhSearchService {
   userData: any;
   repoData: any;
 
-  private username: string;
-  private repositories: string;
-
   constructor(private http:Http) { 
     
   }
@@ -48,4 +45,9 @@ export class GhSearchService {
     })
     return promise
   }
+
+  
+
+
+
   }

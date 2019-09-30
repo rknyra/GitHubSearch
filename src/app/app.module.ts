@@ -11,7 +11,7 @@ import { FooterComponent } from './home/footer/footer.component';
 import { HttpModule } from '@angular/http';
 import { SearchReposComponent } from './home/search-repos/search-repos.component';
 import { SearchUsersComponent } from './home/search-users/search-users.component';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,7 +29,8 @@ import { SearchUsersComponent } from './home/search-users/search-users.component
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpModule
+    HttpModule,
+    FormsModule
     
   ],
   

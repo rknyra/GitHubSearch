@@ -1,8 +1,8 @@
 .searchBar {
-    height: 70vh;
+    /* height: 100vh; */
     display: flex;
-    align-items: center;
-    margin-top: 10vh;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
     overflow: hidden;
 }
 
@@ -13,16 +13,57 @@
 .searchForm input {
     height: 35px;
     border-radius: 1rem;
+    margin-bottom: 5vh;
 }
 
-button {
-    height: 30px;
-    width: 40px;
-    border: 0em;
-    border-radius: 1rem;
-    background-image: url(../../../assets/searchIcon1.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    opacity: 0.5;
+.homeSection {
+    overflow: hidden;
+    font-family: 'Comfortaa', cursive;
+    background-attachment: scroll;
+}
+
+.homeHeader {
+    height: 27vh;
+    width: 100vw;
+    background: black;
+}
+
+.ghProfileDetails {
+    margin-top: -18vh;
+}
+
+.profilePic {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border-width: 1px;
+    border-color: black;
+    background-color: black;
+}
+
+.rkDetails {
+    height: 90px;
+    color: white;
+}
+
+.rkDetailsBlack {
+    color: #333;
+    list-style: none;
+}
+
+.repositories {
+    color: #333;
+    margin-top: 5vh;
+}
+
+.repoHeading {
+    margin-bottom: 3vh;
+}
+
+.card {
+    margin-bottom: 2vh;
+}
+
+.language-color {
+    color: #2B7489;
 }
