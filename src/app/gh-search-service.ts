@@ -11,10 +11,12 @@ export class GhSearchService {
 
   userData: any;
   repoData: any;
+  
 
   constructor(private http:Http) { 
     
   }
+  
   getGithubUser(username){
     console.log(username)
     let promise = new Promise((resolve, reject) => {
