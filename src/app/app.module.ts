@@ -16,6 +16,7 @@ import { FormsModule } from '@angular/forms';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { from } from 'rxjs';
 import { HighlightDirective } from './highlight.directive';
+import { TitleCasePipe } from './title-case.pipe';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { HighlightDirective } from './highlight.directive';
     SearchReposComponent,
     SearchUsersComponent,
     NotFoundComponent,
-    HighlightDirective
+    HighlightDirective,
+    TitleCasePipe
     
   ],
 
