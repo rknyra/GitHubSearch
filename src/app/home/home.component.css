@@ -24,13 +24,14 @@
 }
 
 .rkDetails {
-    height: 90px;
+    height: 93px;
     color: white;
 }
 
 .rkDetailsBlack {
     color: #333;
     list-style: none;
+    margin-top: 3vh;
 }
 
 .repositories {
@@ -39,7 +40,7 @@
 }
 
 .repoHeading {
-    margin-bottom: 3vh;
+    margin-bottom: 10vh;
 }
 
 .card {
