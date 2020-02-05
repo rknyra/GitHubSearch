@@ -3,7 +3,7 @@
 ##### By **Rhoda Kimanga (RK Nyra)**
 
 ### Description
-This is a GitHub Search app [ghSearch](https://rknyra.github.io/GitHubSearch/) that enables the search of github users and public repositories. You can view it [here](https://rknyra.github.io/GitHubSearch/).
+This is a GitHub Search app [ghSearch](https://rknyra.github.io/GitHubSearch/) that enables the search of github users and public repositories. You can view it [here.](https://rknyra.github.io/GitHubSearch/).
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
 
